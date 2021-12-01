@@ -3799,7 +3799,7 @@ fieldset[disabled] .btn-default:hover {
     background-color: #337ab7;
     border-color: #2e6da4;
     font-size: 20px;
-    margin-top: 100px;
+
 
 }
 
@@ -3859,6 +3859,210 @@ fieldset[disabled] .btn-primary:hover {
 
 .btn-primary .badge {
     color: #337ab7;
+    background-color: #fff
+}
+
+
+.btn-true{
+    color: #fff;
+    background-color: #00a3cc;
+    border-color: #00ccff;
+    font-size: 20px;
+   
+
+}
+
+.btn-true.focus,
+.btn-true:focus {
+    color: #fff;
+    background-color: #00b8e6;
+    border-color: #00b8e6
+}
+
+.btn-true:hover {
+    color: #fff;
+    background-color:#00b8e6;
+    border-color: #00b8e6
+}
+
+.btn-true.active,
+.btn-true:active,
+.open>.dropdown-toggle.btn-true {
+    color: #fff;
+    background-color: #00b8e6;
+    border-color: #00b8e6
+}
+
+.btn-true.active.focus,
+.btn-true.active:focus,
+.btn-true.active:hover,
+.btn-true:active.focus,
+.btn-true:active:focus,
+.btn-true:active:hover,
+.open>.dropdown-toggle.btn-true.focus,
+.open>.dropdown-toggle.btn-true:focus,
+.open>.dropdown-toggle.btn-true:hover {
+    color: #fff;
+    background-color: #00b8e6;
+    border-color: #00b8e6;}
+
+.btn-true.active,
+.btn-true:active,
+.open>.dropdown-toggle.btn-true {
+    background-image: none
+}
+
+.btn-true.disabled.focus,
+.btn-true.disabled:focus,
+.btn-true.disabled:hover,
+.btn-true[disabled].focus,
+.btn-true[disabled]:focus,
+.btn-true[disabled]:hover,
+fieldset[disabled] .btn-true.focus,
+fieldset[disabled] .btn-true:focus,
+fieldset[disabled] .btn-true:hover {
+    background-color: #00a3cc;
+    border-color: #00ccff
+}
+
+.btn-true .badge {
+    color: #00a3cc;
+    background-color: #fff
+}
+
+
+.btn-false{
+    color: #fff;
+    background-color: darkred;
+    border-color: darkred;
+    font-size: 20px;
+   
+
+}
+
+.btn-false.focus,
+.btn-false:focus {
+    color: #fff;
+    background-color:darkred;
+    border-color: darkred
+}
+
+.btn-false:hover {
+    color: #fff;
+    background-color: #e60000;
+    border-color: darkred
+}
+
+.btn-false.active,
+.btn-false:active,
+.open>.dropdown-toggle.btn-false {
+    color: #fff;
+    background-color: #e60000;
+    border-color: darkred;
+}
+
+.btn-false.active.focus,
+.btn-false.active:focus,
+.btn-false.active:hover,
+.btn-false:active.focus,
+.btn-false:active:focus,
+.btn-false:active:hover,
+.open>.dropdown-toggle.btn-false.focus,
+.open>.dropdown-toggle.btn-false:focus,
+.open>.dropdown-toggle.btn-false:hover {
+    color: #fff;
+    background-color:#e60000;
+    border-color: darkred
+}
+
+.btn-false.active,
+.btn-false:active,
+.open>.dropdown-toggle.btn-false {
+    background-image: none
+}
+
+.btn-false.disabled.focus,
+.btn-false.disabled:focus,
+.btn-false.disabled:hover,
+.btn-false[disabled].focus,
+.btn-false[disabled]:focus,
+.btn-false[disabled]:hover,
+fieldset[disabled] .btn-false.focus,
+fieldset[disabled] .btn-false:focus,
+fieldset[disabled] .btn-false:hover {
+    background-color: darkred;
+    border-color: darkred;
+}
+
+.btn-false .badge {
+    color: darkred;
+    background-color: #fff; 
+}
+
+.btn-screenshot{
+    color: #fff;
+    background-color: gray;
+    border-color:gray;
+    font-size: 20px;
+  
+}
+
+.btn-screenshot.focus,
+.btn-screenshot:focus {
+    color: #fff;
+    background-color:gray;
+    border-color: gray
+}
+
+.btn-screenshot:hover {
+    color: #fff;
+    background-color:gray;
+    border-color: gray
+}
+
+.btn-screenshot.active,
+.btn-screenshot:active,
+.open>.dropdown-toggle.btn-screenshot {
+    color: #fff;
+    background-color:gray;
+    border-color: gray
+}
+
+.btn-screenshot.active.focus,
+.btn-screenshot.active:focus,
+.btn-screenshot.active:hover,
+.btn-screenshot:active.focus,
+.btn-screenshot:active:focus,
+.btn-screenshot:active:hover,
+.open>.dropdown-toggle.btn-screenshot.focus,
+.open>.dropdown-toggle.btn-screenshot:focus,
+.open>.dropdown-toggle.btn-screenshot:hover {
+    color: #fff;
+    background-color: gray;
+    border-color: gray
+}
+
+.btn-screenshot.active,
+.btn-screenshot:active,
+.open>.dropdown-toggle.btn-screenshot {
+    background-image: none
+}
+
+.btn-screenshot.disabled.focus,
+.btn-screenshot.disabled:focus,
+.btn-screenshot.disabled:hover,
+.btn-screenshot[disabled].focus,
+.btn-screenshot[disabled]:focus,
+.btn-screenshot[disabled]:hover,
+fieldset[disabled] .btn-screenshot.focus,
+fieldset[disabled] .btn-screenshot:focus,
+fieldset[disabled] .btn-screenshot:hover {
+    background-color: gray;
+    border-color:gray
+}
+
+.btn-screenshot .badge {
+    color: gray;
     background-color: #fff
 }
 
