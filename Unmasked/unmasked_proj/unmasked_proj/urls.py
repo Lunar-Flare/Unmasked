@@ -14,23 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-<<<<<<< Updated upstream
 from django.urls import path, include
 from . import views
-=======
 from django.urls import path,include 
->>>>>>> Stashed changes
 from django.conf import settings
 from django.conf.urls.static import static
 from unmasked_proj import views
 
 urlpatterns = [
-<<<<<<< Updated upstream
-    path('admin/', admin.site.urls),
-    
-=======
-
-    path ('', views.index, name='test'),
+#    path ('firebaseTest', views.firebaseTest, name='test2'),
+    path ('', views.index, name='test'), #Testing
     path ('About.html', views.about, name= 'about'),
     path ('Add.html', views.add,name="add"),
     path ('AdminHome.html',views.adminHome, name= 'adminHome'),
@@ -42,7 +35,6 @@ urlpatterns = [
     path ('ManageStudents.html', views.manageStudents, name="manageStudents"),
     path ('Support.html', views.support, name="support"),
     path ('Tips.html',views.tips,name='tips'),
->>>>>>> Stashed changes
 ]
 
 urlpatterns+= static(

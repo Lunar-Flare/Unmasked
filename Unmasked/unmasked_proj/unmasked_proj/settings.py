@@ -54,7 +54,8 @@ ROOT_URLCONF = 'unmasked_proj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/Gamer/Desktop/GitRipo/Unmasked/Unmasked/unmasked_proj/unmasked_proj/HTML'],
+        #Change directory to locate HTML folder
+        'DIRS': ['/Users/Gamer/Desktop/GitRipo/Unmasked/Unmasked/unmasked_proj/HTML'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
