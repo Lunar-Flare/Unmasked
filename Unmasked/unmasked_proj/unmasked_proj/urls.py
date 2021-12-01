@@ -1,4 +1,3 @@
-
 """unmasked_proj URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,14 +16,26 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+from django.urls import path,include 
 from django.conf import settings
 from django.conf.urls.static import static
+from unmasked_proj import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('About.html', views.About , name ='About'),
-    path('add.html'),
-    path('Home.html', views.Home , name ='Home'),
+#    path ('firebaseTest', views.firebaseTest, name='test2'),
+    path ('', views.index, name='test'), #Testing
+    path ('About.html', views.about, name= 'about'),
+    path ('Add.html', views.add,name="add"),
+    path ('AdminHome.html',views.adminHome, name= 'adminHome'),
+    path ('alert.html',views.alert, name="alert"),
+    path ('Contact.html',views.contact, name ='contact'),
+    path ('GeneralQuestions.html',views.genQuestions, name="generalQuestions"),
+    path ('Home.html', views.home, name='home'),
+    path ('Login.html', views.login, name="login"),
+    path ('Logout.html', views.logout, name='logout'),
+    path ('ManageStudents.html', views.manageStudents, name="manageStudents"),
+    path ('Support.html', views.support, name="support"),
+    path ('Tips.html',views.tips,name='tips'),
 ]
 
 urlpatterns+= static(
