@@ -27,6 +27,7 @@ urlpatterns = [
     path ('About.html', views.about, name= 'about'),
     path ('Add.html', views.add,name="add"),
     path ('AdminHome.html',views.adminHome, name= 'adminHome'),
+    path ('alert.html',views.alert, name="alert"),
     path ('Contact.html',views.contact, name ='contact'),
     path ('GeneralQuestions.html',views.genQuestions, name="generalQuestions"),
     path ('Home.html', views.home, name='home'),

@@ -39,6 +39,8 @@ def add(request):
     return render(request, 'Add.html')
 def adminHome(request):
     return render(request, 'AdminHome.html')
+def alert(request):
+    return render(request, 'alert.html')
 def contact(request):
     return render(request, 'Contact.html')
 def genQuestions(request):
