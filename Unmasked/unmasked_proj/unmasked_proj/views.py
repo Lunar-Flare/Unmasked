@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import pyrebase
+#import pyrebase
 
 config ={
     "apiKey": "AIzaSyAxV8-iToKuLitUmG48EEkIddvq7iYrN2Y",
@@ -11,10 +11,11 @@ config ={
     "appId": "1:937313859878:web:25d017bad4c1df1255e9e7",
 }
 
-firebase=pyrebase.initialize_app(config)
-authe = firebase.auth()
-database=firebase.database()
+#firebase=pyrebase.initialize_app(config)
+#authe = firebase.auth()
+#database=firebase.database()
 
-def index(request):
-    name = database.child("users").child("GTest").childe("email").get.val()
-    return render(request, 'Home.html')
+#def index(request):
+#    name = database.child("users").child("GTest").childe("email").get.val()
+#    return render(request, 'Home.html')
+
