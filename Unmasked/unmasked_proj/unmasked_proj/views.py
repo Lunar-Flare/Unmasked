@@ -4,12 +4,9 @@ from django.shortcuts import get_object_or_404,redirect
 from django.conf import settings
 import pyrebase 
 import firebase_admin
-#from Cryptodome.Cypher import aes
+from pyrebase.pyrebase import Firebase
 
-#firebase class
-class FireBase:
-    def __init__(self):
-        self.config = {
+config = {
             "apiKey": "AIzaSyAxV8-iToKuLitUmG48EEkIddvq7iYrN2Y",
             "authDomain": "facial-recongition-38069.firebaseapp.com",
             "databaseURL": "https://facial-recongition-38069-default-rtdb.firebaseio.com",
@@ -18,18 +15,20 @@ class FireBase:
             "messagingSenderId": "937313859878",
             "appId": "1:937313859878:web:25d017bad4c1df1255e9e7"
         }
-        self.cred_obj = firebase_admin.credentials.Certificate(
-            'C:/Users/rrrsy/Desktop/GitRipo/FacialRecognition/facial-recongition-38069-firebase-adminsdk.json')
-        self.default_app = firebase_admin.initialize_app(
-            self.cred_obj, {'databaseURL': self.config["databaseURL"]})
-        firebase=pyrebase.initialize_app(self.config)
-        authe = firebase.auth()
-        database=firebase.database()
-        
-        #def firebaseTest(request):
-        #    name = database.child("users").child("GTest").childe("email").get.val()
-        #    return HttpResponse(name)
+cred_obj = firebase_admin.credentials.Certificate(
+            'C:/Users/Gamer/Desktop/GitRipo/Unmasked/Unmasked/unmasked_proj/unmasked_proj/Facial_Recog/facial-recongition-38069-firebase-adminsdk.json')
+default_app = firebase_admin.initialize_app(
+            cred_obj, {'databaseURL': config["databaseURL"]})
+firebase=pyrebase.initialize_app(config)
+authe = firebase.auth()
+database=firebase.database()
 
+#Testing db hookup test, getting email       
+def firebaseTest(request):
+    name = database.child("users").child("G2356732").child("email").get().val()
+    name2 = database.child("users").child("G4589350").child("email").get().val()
+    return HttpResponse(name)
+       
 #Renders all webpages
 def index (request):
     return HttpResponse("Hello, welcome to the index page.This is a test.")
